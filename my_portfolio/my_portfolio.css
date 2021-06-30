@@ -1,0 +1,133 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body{
+  background-color: rgb(255, 255, 255);
+}
+
+.container-fluid{
+  padding: 0;
+  font-weight:bold;
+}
+
+.container{
+  margin:100px auto;
+  color:#00a0e9;
+  font-weight:bold;
+}
+.movie{
+  text-align: center;
+}
+.movie iframe{
+  box-shadow: black 5px 5px 5px;
+  border-radius: 5px;
+}
+
+.card-img-top{
+  border-bottom:1px solid black;
+}
+
+.rowcontainer{
+  margin:12px 0;
+  color: black;
+}
+.rowcontainer .card{
+  box-shadow: black 2px 2px 2px;
+}
+h5{
+  color: rgba(0,160,233,.95);
+}
+
+h2{
+  text-align: center;
+  padding-top:30px;
+}
+
+.display-3,h2{
+  font-family: 'Viaoda Libre', cursive;
+}
+
+.triangle01 {
+  display: table;
+  width: 100%;
+  height: 600px;
+  background-color: #f5f8fa;
+  transform: skewY(-5deg);
+  margin-top: 8vw;
+ 
+}
+ 
+.triangle02 {
+  display: table;
+  width: 100%;
+  height: 600px;
+  background-color:rgba(0,160,233,.95);
+  transform: skewY(5deg);
+  margin-top: 7vw;
+  color: rgb(255, 255, 255);
+}
+ 
+.triangle01 > * {
+  transform: skewY(5deg);
+}
+.triangle02 > * {
+  transform: skewY(-5deg);
+}
+
+.sample03{
+  color:#f5f8fa;
+  text-align:left;
+  font-weight: bold;
+  font-size: large;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("./imagefolder/big.png");
+}
+.fontbox{
+  padding: 30px;
+}
+
+.minis{
+  display: none;
+}
+
+
+
+@media screen and (max-width:575px) {
+  
+  /* 575px以下に適用されるCSS（タブレット用） */
+  .centerlign{
+    justify-content:initial;
+    margin:20px auto;
+    align-items: center;
+  }
+
+  .movie iframe{
+    width:97%;
+    height:250px;
+  }
+  .card{
+    margin:0 auto;
+  }
+  .sample03{
+    font-size:initial;
+    background-image: url('./imagefolder/mini.png');
+  }
+  .bigs{
+    display:  none;
+  }
+
+  .minis{
+    display: initial;
+    line-height:25px;
+  }
+  
+}
